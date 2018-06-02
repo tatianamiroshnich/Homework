@@ -10,11 +10,11 @@ public class Person {
         this.age = age;
     }
 
-    void talk(String person) {
-        System.out.println(person + " говорит.");
+    void talk() {
+        System.out.println(fullName + " говорит.");
     }
 
-    void move(String person) {
-        System.out.println(person + " двигается.");
+    void move() {
+        System.out.println(fullName + " двигается.");
     }
 }

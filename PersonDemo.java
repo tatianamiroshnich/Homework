@@ -4,7 +4,7 @@ public class PersonDemo {
         Person person2 = new Person();
         person2.fullName = "Anna Smith";
 
-        person1.talk(person1.fullName);
-        person2.move(person2.fullName);
+        person1.talk();
+        person2.move();
     }
 }
