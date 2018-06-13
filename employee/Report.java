@@ -8,7 +8,8 @@ public class Report {
 
         for (Employee employee : employees) {
             String fio = employee.getFullname();
-            System.out.println(fio);
+            double salary = employee.getSalary();
+            System.out.printf("%15s%20s%n",fio,salary);
         }
 
     }
