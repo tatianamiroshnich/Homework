@@ -14,7 +14,7 @@ public class Literals {
         int a = 0x004;      //целочисленный 16-й
         String str = "Hello!";   //строковый
 
-        System.out.println(str + " " +d + " " + f + " " + c + " " + b + " " + i1 + " " +
-        ten + " " + x + " " + a);
+        System.out.println(str + " " + d + " " + f + " " + c + " " + b + " " + i1 + " " +
+                ten + " " + x + " " + a);
     }
 }

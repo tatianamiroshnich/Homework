@@ -1,6 +1,6 @@
 package strBuilder;
 
-public class middleSymbol {
+public class MiddleSymbol {
     public static void main(String[] args) {
         middle("leto");
         middle("Practice");

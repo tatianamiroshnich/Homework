@@ -13,13 +13,14 @@ public class Light {
         }
 */
     }
-        public static int runLights(int i){
-            for(i=0;i<10;i++){
-                i = i<<1;
-                System.out.println(Integer.toBinaryString(i));
-            }
-            return i;
-        }
 
+    public static int runLights(int i) {
+        for (i = 0; i < 10; i++) {
+            i = i << 1;
+            System.out.println(Integer.toBinaryString(i));
+        }
+        return i;
     }
+
+}
 

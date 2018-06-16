@@ -62,7 +62,7 @@ public class MinMax<T extends java.lang.Number> {
     }
 
     public static void main(String[] args) {
-        MinMax<Integer> ob1 = new MinMax<>(new Integer[]{3,4,9,5});
+        MinMax<Integer> ob1 = new MinMax<>(new Integer[]{3, 4, 9, 5});
         System.out.println(ob1.min());
         System.out.println(ob1.max());
     }

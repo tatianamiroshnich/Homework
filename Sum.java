@@ -7,7 +7,7 @@ public class Sum {
         if (scanner.hasNextInt()) {
             int i1 = scanner.nextInt();
             int i2 = scanner.nextInt();
-            int sum = i1+i2;
+            int sum = i1 + i2;
             System.out.println("Сумма: " + sum);
 
         } else {

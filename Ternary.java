@@ -1,3 +1,4 @@
+
 public class Ternary {
     public static void main(String[] args) {
         int j, k, l, m;
@@ -8,8 +9,6 @@ public class Ternary {
 
         m = j<k?(j<l?j:l):(k<l?k:l);
         System.out.println("меньшее по модулю: " + m);
-
-
     }
 
     public static int getModule(int i){

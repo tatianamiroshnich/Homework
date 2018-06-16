@@ -1,8 +1,17 @@
 package employee;
 
+import java.time.LocalDate;
+
 public class Employee {
     private double salary;
     private String fullname;
+    private String salaryDate;
+
+    public Employee(double salary, String fullname, String salaryDate) {
+        this.salary = salary;
+        this.fullname = fullname;
+        this.salaryDate = salaryDate;
+    }
 
     public Employee(double salary, String fullname) {
         this.salary = salary;
@@ -13,8 +22,24 @@ public class Employee {
         return salary;
     }
 
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
     public String getFullname() {
         return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public String getSalaryDate() {
+        return salaryDate;
+    }
+
+    public void setSalaryDate(String salaryDate) {
+        this.salaryDate = salaryDate;
     }
 
     @Override
@@ -48,12 +73,11 @@ public class Employee {
 
     public static void main(String[] args) {
         Employee[] employees = new Employee[3];
-        employees[0] = new Employee(25000.5,"Petrov");
+        employees[0] = new Employee(25000.5,"Petrov","June 5, 2018");
         employees[1] = new Employee(20000.5,"Ivanov");
         employees[2] = new Employee(15000.5,"Semenov");
 
-        Report.generateReport(employees);
+        FullReport.generateFullReport(employees);
     }
-
 
 }
