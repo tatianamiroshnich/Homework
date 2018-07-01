@@ -1,14 +1,15 @@
 package onlineStore;
 
 import java.util.List;
+import java.util.Set;
 
 public class Catalog {
     private String name;
-    private List<Product> list;
+    private Set<Product> set;
 
-    public Catalog(String name, List<Product> list) {
+    public Catalog(String name, Set<Product> set) {
         this.name = name;
-        this.list = list;
+        this.set = set;
     }
 
     public String getName() {
@@ -19,12 +20,12 @@ public class Catalog {
         this.name = name;
     }
 
-    public List<Product> getList() {
-        return list;
+    public Set<Product> getSet() {
+        return set;
     }
 
-    public void setList(List<Product> list) {
-        this.list = list;
+    public void setSet(Set<Product> set) {
+        this.set = set;
     }
 
     @Override
@@ -35,13 +36,13 @@ public class Catalog {
         Catalog catalog = (Catalog) o;
 
         if (name != null ? !name.equals(catalog.name) : catalog.name != null) return false;
-        return list != null ? list.equals(catalog.list) : catalog.list == null;
+        return set != null ? set.equals(catalog.set) : catalog.set == null;
     }
 
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (list != null ? list.hashCode() : 0);
+        result = 31 * result + (set != null ? set.hashCode() : 0);
         return result;
     }
 
@@ -49,7 +50,7 @@ public class Catalog {
     public String toString() {
         return "Catalog{" +
                 "name='" + name + '\'' +
-                ", list=" + list +
+                ", set=" + set +
                 '}';
     }
 }

@@ -10,6 +10,6 @@ public class PriceComparator implements Comparator<Product> {
         }
         else if(o1.getPrice() < o2.getPrice()){
             return 1;
-        }return 0;
+        }return o1.getBrand().compareTo(o2.getBrand());
     }
 }
